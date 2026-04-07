@@ -1,2 +1,314 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+.hero-section {
+  background-image: url("./images/Bitmap.svg");
+}
+.nav-ctn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.nav-ctn > span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+nav ul {
+  display: none;
+}
+
+.hero-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-left h2 {
+  font-size: 40px;
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.hero-left p {
+  font-size: 20px;
+  width: 70%;
+  margin: 30px auto;
+  color: #161c2d;
+  opacity: 70%;
+}
+
+.hero-left button {
+  display: block;
+  font-size: 17px;
+  background: #473bf0;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.hero-left button a {
+  color: white;
+  font-weight: 700;
+}
+
+.hero-left small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.hero-right img {
+  margin: 30px 30px 0 30px;
+  width: 80%;
+}
+
+.hero-footer {
+  display: block;
+  background-color: #161c2d;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 1.3rem;
+}
+
+.hero-footer a {
+  text-decoration: underline;
+  color: white;
+}
+
+.advice-ctn h2 {
+  font-size: 45px;
+  text-align: center;
+  margin: 30px;
+}
+
+.advice-ctn p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.advice button {
+  display: block;
+  font-size: 17px;
+  background: #473bf0;
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  margin: 30px;
+}
+.advice button a {
+  color: white;
+  font-weight: 700;
+}
+
+.advice img {
+  width: 80%;
+  margin: 0 30px;
+}
+
+.ratings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 20px;
+  width: 90%;
+  margin: 20px;
+}
+
+.services {
+  margin: 0 auto;
+}
+
+.services h1 {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.services > p {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.service-grid {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service-grid h3 {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .hero-ctn {
+    margin: 30px;
+  }
+
+  .hero-ctn span {
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+  }
+
+  .menu {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: #161c2d;
+  }
+
+  .nav-ctn button {
+    font-size: 17px;
+    background: #473bf0;
+    width: 168px;
+    height: 30px;
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .hero-left h2 {
+    font-size: 48px;
+    font-weight: 700;
+    width: 80%;
+    text-align: left;
+    margin: 0;
+  }
+  .hero-left p {
+    width: 63%;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: left;
+    flex-direction: start;
+    margin: 20px 0;
+  }
+
+  .hero-left button {
+    font-size: 17px;
+    width: 200px;
+    margin: 0;
+  }
+
+  .hero-left small {
+    display: block;
+    margin: 20px;
+  }
+
+  .hero-right img {
+    width: 100%;
+    margin: 0 50px;
+    padding: 0;
+  }
+
+  .hero-footer {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 17px;
+  }
+
+  .advice {
+    display: flex;
+    margin: 100px;
+  }
+
+  .advice-ctn {
+    margin: 50px 20px;
+  }
+
+  .advice-ctn h2 {
+    font-size: 32px;
+    font-weight: 700;
+    width: 80%;
+    text-align: left;
+    margin: 20px 0;
+  }
+  .advice-ctn p {
+    font-size: 19px;
+    width: 80%;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  .advice-ctn button {
+    font-size: 17px;
+    width: 200px;
+    margin: 0;
+  }
+
+  .advice img {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ratings {
+    display: block;
+    margin-left: 50px;
+  }
+
+  .ratings h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .ratings p {
+    font-size: 19px;
+    font-weight: 400;
+    padding: 10px 0;
+    width: 70%;
+    line-height: 32px;
+  }
 }
