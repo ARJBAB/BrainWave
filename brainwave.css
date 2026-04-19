@@ -198,7 +198,7 @@ nav ul {
 
 .top-choose {
   position: relative;
-  margin: 20px ;
+  margin: 20px;
   height: 950px;
 }
 
@@ -218,7 +218,9 @@ nav ul {
   z-index: 2;
   top: 50vh;
   background-color: white;
+  width: 100vw;
 }
+
 .choose-texts h2 {
   font-size: 30px;
   width: 60%;
@@ -244,7 +246,10 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/BG.png);
+  background-image:linear-gradient(
+      rgba(22, 28, 45, 0.5),
+      rgba(22, 28, 45, 0.5)
+    ), url(./images/BG.png);
   background-size: auto;
   background-repeat: no-repeat;
   color: #fff;
@@ -252,14 +257,14 @@ nav ul {
 }
 
 .play {
-  width: 50px; 
+  width: 50px;
 }
-.bottom-choose h2{
+.bottom-choose h2 {
   font-size: 20px;
   margin: 20px 0;
 }
 
-.bottom-choose p{
+.bottom-choose p {
   opacity: 65%;
 }
 .about-us {
@@ -559,20 +564,72 @@ nav ul {
   .choose {
     margin: 80px 0;
     position: relative;
+    height: 1100px;
   }
 
   .top-choose {
     /* background-color: rebeccapurple; */
-    width: 50vw;
+    width: 80vw;
     margin: 0 auto;
     display: flex;
   }
 
-  .oval {
+  .man {
+    height: 100%;
+  }
+
+  .choose-texts {
+    position: none;
+    top: 10vh;
+    right: 0px;
+    width: 40vw;
+  }
+
+  .choose-texts h2 {
+    font-size: 36px;
+    text-align: left;
+    color: #161c2d;
+    margin: 0;
+    padding: 0;
+  }
+
+  .choose-texts #first {
+    width: 25vw;
+    font-size: 19px;
+    opacity: 70%;
+    text-align: left;
+    color: #161c2d;
+    padding: 30px 0;
+  }
+
+  .bold {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+  }
+
+  .bottom-choose {
     position: absolute;
-    z-index: -1;
-    top: 80px;
-    left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 610px;
+    width: 100vw;
+    z-index: 2;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .bottom-choose h2{
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .bottom-choose p{
+    font-weight: 400;
+    font-size: 19px;
+    width: 600px;
+    text-align: center;
   }
 
   .about-us h2 {
